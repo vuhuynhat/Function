@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Giaithua(n){
+        
+        if(n==0){
+            return 1;
+        }
+        return n*Giaithua(n-1);
+    }
+    let n= prompt("nhap so can tinh giai thua")
+    document.write(Giaithua(n))
+</script>

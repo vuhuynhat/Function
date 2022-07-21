@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star1 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"]
+    let search = prompt("nhap ten chom sao");
+    let index_start = 0;
+    let KQ = "";
+    function Chomsao(search) {
+        for (let i = 0; i < star.length; i++) {
+            if (search == star[i]) {
+                index_start = i;
+                for (let j = 0; j < star1.length; j++) {
+                    if (index_start == j) {
+                        KQ = star1[j];
+
+                    }
+                }
+            }
+
+        }
+        return KQ;
+    }
+    document.write(Chomsao(search))
+</script>

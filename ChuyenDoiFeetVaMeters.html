@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1>Chuyển đổi giữa meter va feet </h1>
+    <input type="text" id="number" placeholder="nhap vao so can chuyen doi">
+    
+    <button onclick="footToMeter(input)"> chuyen doi tu feet sang meter</button>
+    <button onclick="meterToFoot(input)"> chuyen doi tu meter sang feet</button>
+    <p id="result">Day la ket qua</p>
+</body>
+
+</html>
+
+<script>
+   
+    let input = +document.getElementById("number").value;
+   
+   
+   
+    function footToMeter(foot) {
+        let meter = 0.305 * foot;
+        return meter;
+        document.getElementById("result").innerHTML = meter;
+    }
+    function meterToFoot(meter) {
+        let foot = 3.279 * meter;
+        return foot;
+        document.getElementById("result").innerHTML = foot;
+    }
+</script>
